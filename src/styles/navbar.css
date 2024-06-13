@@ -1,42 +1,44 @@
-.parent-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Optional: Align items vertically */
-    color: white;
+.banner {
+    position: sticky; /* Fixed position to keep the navbar at the top */
+    top: 0;
     width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-.navbar {
-    width: 100%;
-    z-index: 1000;
-
-    transition: background-color 0.1s ease;
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    z-index: 9999; /* Ensuring the navbar appears above other content */
+     /* Padding for top and bottom */
   }
   
-  .banner{
-    position: fixed;
-    width: 100%;
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
+  .banner.sticky {
     background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
     --tw-gradient-from: #63b3ed;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(99,179,237,0));
     --tw-gradient-to: #4299e1;
-    /* --tw-shadow: 0px 2px 8px rgba(0,0,0,0.08), 0px 1px 0px #3182ce; */
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);    
+   
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+     /* Background color with alpha transparency when sticky */
   }
+  
+  .parent-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    color: white; /* Text color */
+    width: 100%;
+    padding-left: 1.5rem; /* Left padding */
+    padding-right: 1.5rem; /* Right padding */
+  }
+  
+  /* .banner{
+    position: fixed;
+    width: 100%;
+  } */
+  
 
 .canvas{
-   height:100%;
-   min-height: 700px;
+   height:700px;
    background: #67B1EA;
-
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 70% 88%, 0 100%)
 }
-
 .dropbtn {
     color: white;
     padding: 1.5rem;
@@ -86,7 +88,10 @@
 
 
 
-
+.dropdown-content2 a.active {
+    background-color: #007bff; /* Change to your desired active color */
+    color: white; /* Change to your desired active color */
+  }
 
 .dropbtn2 {
     color: white;
@@ -139,4 +144,38 @@
 
 .head2 {
     padding: 8px;
+}
+
+.typewriter{
+    padding-top: 16rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.write{
+    font-size: 44px;
+    color: #2082CE;
+
+}
+
+.writer2.col-md-6 {
+    margin-top: -100px;
+}
+
+.write-box{
+    padding: 2.5rem;
+    width: 100%;
+    position: relative;
+    top: 30%;
+    background-color: white;
+    max-width: 80%;
+    border-radius: 1.25rem;
+    color: #757575;
+    font-style: sans-serif;
+}
+.im{
+    position: absolute;
+}
+
+.type-li{
+  color: white;
 }
