@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Content from './Content'
 
 const Home = () => {
  
   return (
     <>
-    <div className="canvas">
-    <div className="banner">
-    <Navbar/>
-    </div>
-    </div>
+   <Navbar />
+      <div>
+        <Content />
+      </div>
    
     </>
   )

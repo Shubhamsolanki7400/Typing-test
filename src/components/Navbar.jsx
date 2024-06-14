@@ -29,8 +29,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={isSticky ? 'banner sticky' : 'banner'}>
-        <div className="parent-div">
+    <div className={isSticky ? 'navbar-container sticky' : 'navbar-container'}>
+    <div className="parent-div">
           <div className="head1">
             <img src={logo} alt="Logo" />
             <div className="dropdown">

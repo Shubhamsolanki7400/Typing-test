@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../assets/image.png'
+import Content from './Content'
 const Typewriter = () => {
     return (
         <>
@@ -20,10 +21,15 @@ const Typewriter = () => {
                     <div className="write-box">
                         <p style={{color:"black"}}>Learn to Type for Free</p>
                         <p>Join millions of Typing.com users and learn to type at your own pace with gamified lessons and student-led progression.</p>
+                        <div className="start">
+                        <button style={{backgroundColor:"#FFDB57", border:"1px solid #F1BC3F" , borderRadius:'5px', color: "#000000",fontSize:"14px",padding:"2px"}}>Start Typing Today</button>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
-
+            
+            
         </>
     )
 }

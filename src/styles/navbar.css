@@ -1,44 +1,33 @@
-.banner {
-    position: sticky; /* Fixed position to keep the navbar at the top */
-    top: 0;
-    width: 100%;
-    background-color: transparent; /* Initial background color */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-    z-index: 9999; /* Ensuring the navbar appears above other content */
-     /* Padding for top and bottom */
-  }
-  
-  .banner.sticky {
+
+.navbar-container{
+    background-color: #83bceb;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+  .navbar-container.sticky {
+    position: fixed;
     background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
     --tw-gradient-from: #63b3ed;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(99,179,237,0));
     --tw-gradient-to: #4299e1;
-   
     box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
-     /* Background color with alpha transparency when sticky */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust z-index as needed */
+    /* Ensure background color to avoid transparency issues */
   }
-  
   .parent-div {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Align items vertically */
-    color: white; /* Text color */
-    width: 100%;
-    padding-left: 1.5rem; /* Left padding */
-    padding-right: 1.5rem; /* Right padding */
+    align-items: center;
   }
   
-  /* .banner{
-    position: fixed;
-    width: 100%;
-  } */
-  
+
 
 .canvas{
-   height:700px;
    background: #67B1EA;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 70% 88%, 0 100%)
-}
+   padding-bottom: 230px;
+   clip-path: polygon(0 0, 100% 0, 100% 80%, 70% 86%, 0 100%);}
 .dropbtn {
     color: white;
     padding: 1.5rem;
@@ -147,13 +136,19 @@
 }
 
 .typewriter{
-    padding-top: 16rem;
+    padding-top: 12rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-}
+    background-color: #83bceb;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 70% 86%, 0 100%);}
+
+
 .write{
     font-size: 44px;
     color: #2082CE;
+    font-weight: 700;
 
 }
 
@@ -179,3 +174,33 @@
 .type-li{
   color: white;
 }
+
+.start{
+    position: absolute;
+    top: 95%;
+    right: 10%;
+
+}
+
+
+img.card-img {
+    background-color: #EBF8FF;
+    border-radius: 50px;
+    max-width: 74px;
+    max-height: 74px;
+    padding: 10px;
+}
+
+.card.mb-4{
+    border: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 14px;
+}
+
