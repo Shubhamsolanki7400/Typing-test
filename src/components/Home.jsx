@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Content from './Content'
+import Navbar from './Navbar';
+import Content from './Content';
 
 const Home = () => {
  
@@ -8,11 +8,11 @@ const Home = () => {
     <>
    <Navbar />
       <div>
-        <Content />
+        <Content/>
       </div>
    
     </>
   )
 }
 
-export default Home
+export default Home;
